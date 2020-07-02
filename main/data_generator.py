@@ -4,7 +4,7 @@ import glob
 from tqdm import tqdm
 import random
 
-random.seed('AVSE')
+random.seed('LAVSE')
 
 def data_nor(data, channel):
     mean = torch.mean(data, channel, keepdim=True)

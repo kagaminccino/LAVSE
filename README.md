@@ -21,11 +21,6 @@ Please cite the following paper if you use the codes from this repository.
 * pystoi
 * soundfile
 
-You can simply enter the command below and install the rest of the requirements.
-```
-bash env_setup.sh
-```
-
 ## Usage
 
 You can simply enter the command below and the average PESQ and STOI results will show on your terminal pane.

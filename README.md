@@ -10,10 +10,16 @@ Please cite the following paper if you use the codes from this repository.
 
 [S.-Y. Chuang, Y. Tsao, C.-C. Lo, and H.-M. Wang, “Lite audio-visual speech enhancement,” in arXiv preprint arXiv:2005.11769, 2020.](https://arxiv.org/abs/2005.11769)
 
-## Requirement
+## Prerequisites
 
-* python 3.6
-* NVIDIA GPU + CUDA 10 + CuDNN
+* python==3.6
+* torch>=1.4.0
+* torchaudio>=0.4.0
+* torchsummaryX
+* tqdm
+* visdom
+* pystoi
+* soundfile
 
 You can simply enter the command below and install the rest of the requirements.
 ```

@@ -1,14 +1,22 @@
-# LAVSE
-Python codes for [Lite Audio-Visual Speech Enhancement (LAVSE)](https://arxiv.org/abs/2005.11769).
+# Lite Audio-Visual Speech Enhancement (Interspeech 2020)
 
 ## Introduction
 
-This is the implementation of LAVSE in PyTorch. \
-We have put one preprocessed test sample data (including enhanced results) in this repository. \
-The dataset of TMSV (Taiwan Mandarin speech with video) used in LAVSE is released [here](http://xxxxxxxx). \
-Please cite the following paper if you use the codes from this repository.
+This is the PyTorch implementation of [Lite Audio-Visual Speech Enhancement (LAVSE)](https://arxiv.org/abs/2005.11769).
 
-[S.-Y. Chuang, Y. Tsao, C.-C. Lo, and H.-M. Wang, “Lite audio-visual speech enhancement,” in arXiv preprint arXiv:2005.11769, 2020.](https://arxiv.org/abs/2005.11769)
+We have put one preprocessed test sample data (including enhanced results) in this repository.
+
+<!-- The dataset of TMSV (Taiwan Mandarin speech with video) used in LAVSE is released [here](http://xxxxxxxx). -->
+
+Please cite the following paper if you find the codes useful in your research.
+
+```
+@inproceedings{chuang2020lite,
+  title={Lite Audio-Visual Speech Enhancement},
+  author={Chuang, Shang-Yi and Tsao, Yu and Lo, Chen-Chou and Wang, Hsin-Min},
+  booktitle={Proc. Interspeech 2020}
+}
+```
 
 ## Prerequisites
 

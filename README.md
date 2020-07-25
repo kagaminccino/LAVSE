@@ -33,14 +33,13 @@ Please cite the following paper if you find the codes useful in your research.
 
 You can simply enter the command below and the average PESQ and STOI results will show on your terminal pane.
 
-Remember to activate visdom for recording the training loss before bashing the script.
+Remember to activate `visdom` (probably in a `screen` or `tmux`) for recording the training loss before bashing the script.
 
 ```
-visdom
 bash run.sh
 ```
 
-Go check run.sh if you need further information about the command lines.
+Go check `run.sh` if you need further information about the command lines.
 
 ## Acknowledgment
 * Bio-ASP Lab, CITI, Academia Sinica, Taipei, Taiwan

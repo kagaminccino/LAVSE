@@ -32,9 +32,14 @@ Please cite the following paper if you find the codes useful in your research.
 ## Usage
 
 You can simply enter the command below and the average PESQ and STOI results will show on your terminal pane.
+
+Remember to activate visdom for loss recording before bashing the script.
+
 ```
+visdom
 bash run.sh
 ```
+
 Go check run.sh if you need further information about the command lines.
 
 ## Acknowledgment

@@ -65,20 +65,20 @@ def scoring_dir(scoring_path_list):
     scores = []
 
     for dir_path in scoring_path_list:
-            clean_path, noisy_path, enhan_path = dir_path
+        clean_path, noisy_path, enhan_path = dir_path
 
-            print('Scoring PESQ and STOI of wav in \'' + noisy_path + '\'\n' + \
-                  '                             and \'' + enhan_path + '\'...')
-            for wav_path in tqdm(sorted(glob.glob(noisy_path + '*.wav'))):
+        print('Scoring PESQ and STOI of wav in \'' + noisy_path + '\'\n' + \
+              '                             and \'' + enhan_path + '\'...')
+        for wav_path in tqdm(sorted(glob.glob(noisy_path + '*.wav'))):
 
-                clean_wav_path = wav_path.replace(noisy_path, clean_path)
-                noisy_wav_path = wav_path
-                enhan_wav_path = wav_path.replace(noisy_path, enhan_path)
+            clean_wav_path = wav_path.replace(noisy_path, clean_path)
+            noisy_wav_path = wav_path
+            enhan_wav_path = wav_path.replace(noisy_path, enhan_path)
 
-                # print('clean_wav_path =', clean_wav_path)
-                # print('noisy_wav_path =', noisy_wav_path)
-                # print('enhan_wav_path =', enhan_wav_path)
-                scores.append(scoring_file(clean_wav_path, noisy_wav_path, enhan_wav_path))
+            # print('clean_wav_path =', clean_wav_path)
+            # print('noisy_wav_path =', noisy_wav_path)
+            # print('enhan_wav_path =', enhan_wav_path)
+            scores.append(scoring_file(clean_wav_path, noisy_wav_path, enhan_wav_path))
 
     return scores # list of (file_name, noisy_pesq, enhan_pesq, noisy_stoi, enhan_stoi)
 

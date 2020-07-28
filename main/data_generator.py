@@ -78,13 +78,8 @@ class AV_Dataset(Dataset):
         return len(self.samples)
 
     def __getitem__(self, idx):
-        return self.load_data(*self.samples[idx])
+        clean_stftpt_path, noisy_stftpt_path, lippt_path = self.samples[idx]
 
-    def load_lip(self, lippt_path):
-        lippt = torch.load(lippt_path)
-        return lippt
-
-    def load_data(self, clean_stftpt_path, noisy_stftpt_path, lippt_path):
         file_name = noisy_stftpt_path.rsplit('.', 1)[0]
         file_name = file_name.rsplit('/', 2)
         noisy_type = file_name[-2]
@@ -99,7 +94,7 @@ class AV_Dataset(Dataset):
             (spec_noisy, _, _), _ = stft2spec(stft_noisy, normalized=True, save_phase=False, save_mean_std=False)
 
             if self.av:
-                lippt = self.load_lip(lippt_path)
+                lippt = torch.load(lippt_path)
 
                 frame_num = min(spec_clean.shape[-1], lippt.shape[-1])
 
@@ -136,7 +131,7 @@ class AV_Dataset(Dataset):
                 (spec_noisy, spec_noisy_mean, spec_noisy_std), phase = stft2spec(stft_noisy, normalized=True, save_phase=True, save_mean_std=True)
 
             if self.av:
-                lippt = self.load_lip(lippt_path)
+                lippt = torch.load(lippt_path)
 
                 frame_num = min(spec_noisy.shape[-1], lippt.shape[-1])
 

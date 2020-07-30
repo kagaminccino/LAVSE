@@ -1,7 +1,7 @@
 dataset_path = '../data/'
 
-train_spk_list = [5]
-val_spk_list = [5]
+train_spk_list = [1]
+val_spk_list = [1]
 test_spk_list = [5]
 
 noise_train_list = ['engine']

@@ -44,7 +44,9 @@ Go check `run.sh` if you need further information about the command lines.
 ## License
 
 The LAVSE work is released under MIT License.
+
 See LICENSE for more details.
 
-## Acknowledgment
-* Bio-ASP Lab, CITI, Academia Sinica, Taipei, Taiwan
+## Acknowledgments
+* [Bio-ASP Lab](https://bio-asplab.citi.sinica.edu.tw), CITI, Academia Sinica, Taipei, Taiwan
+* [SLAM Lab](http://slam.iis.sinica.edu.tw), IIS, Academia Sinica, Taipei, Taiwan

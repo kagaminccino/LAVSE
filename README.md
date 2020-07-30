@@ -41,5 +41,10 @@ bash run.sh
 
 Go check `run.sh` if you need further information about the command lines.
 
+## License
+
+The LAVSE work is released under MIT License.
+See LICENSE for more details.
+
 ## Acknowledgment
 * Bio-ASP Lab, CITI, Academia Sinica, Taipei, Taiwan

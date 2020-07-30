@@ -4,7 +4,7 @@
 
 This is the PyTorch implementation of [Lite Audio-Visual Speech Enhancement (LAVSE)](https://arxiv.org/abs/2005.11769).
 
-We have put one preprocessed test sample data (including enhanced results) in this repository.
+We have also put some preprocessed sample data (including enhanced results) in this repository.
 
 <!-- The dataset of TMSV (Taiwan Mandarin speech with video) used in LAVSE is released [here](http://xxxxxxxx). -->
 

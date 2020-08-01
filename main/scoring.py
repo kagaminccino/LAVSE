@@ -43,13 +43,13 @@ def scoring_file(clean_wav_path, noisy_wav_path, enhan_wav_path):
 
     file_name = noisy_wav_path.rsplit('.', 1)[0]
     file_name = file_name.rsplit('/', 2)
-    noisy_type = file_name[-2]
+    noise_type = file_name[-2]
     file_name = file_name[-1]
 
-    # print('noisy_type =', noisy_type)
+    # print('noise_type =', noise_type)
     # print('file_name =', file_name)
 
-    file_name = file_name + '__' + noisy_type
+    file_name = file_name + '__' + noise_type
     # print('file_name =', file_name)
 
     clean, sr = sf.read(clean_wav_path)

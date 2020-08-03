@@ -401,12 +401,12 @@ def test(device, model, dataset, test_batch_size, frame_seq, result_audio_path, 
                 stfts = (pred_noisys - 1e-12) * phases
                 stfts = stfts.permute(0, 2, 3, 1)
 
-                stfts = stfts.cpu()
-
                 wavs = torchaudio.functional.istft(stfts, n_fft=512, hop_length=320,
-                                            win_length=512, window=torch.hann_window(512),
+                                            win_length=512, window=torch.hann_window(512).to(stfts.device),
                                             center=True, pad_mode='reflect', normalized=False,
                                             onesided=True, length=None)
+
+                wavs = wavs.cpu()
 
                 if av:
                     outputs = zip(file_names, wavs, pred_lips)

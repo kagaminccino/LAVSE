@@ -15,7 +15,7 @@ parser = argparse.ArgumentParser()
 ########## training ##########
 parser.add_argument('--retrain', action='store_true', help='to train a new model or to retrain an existing model.')
 parser.add_argument('--dataset', type=str, default='AV_enh', help='options: AV_enh')
-parser.add_argument('--model', type=str, default='ADCNN', help='options: LAVSE')
+parser.add_argument('--model', type=str, default='LAVSE', help='options: LAVSE')
 parser.add_argument('--loss', type=str, default='MSE', help='option: MSE')
 parser.add_argument('--opt', type=str, default='Adam', help='option: Adam')
 parser.add_argument('--keeptrain', action='store_true', help='continue training of a trained model. remember to set --fromepoch.')

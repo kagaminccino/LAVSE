@@ -20,14 +20,14 @@ Please cite the following paper if you find the codes useful in your research.
 
 ## Prerequisites
 
-* python==3.6
-* torch>=1.4.0
-* torchaudio>=0.4.0
-* torchsummaryX
-* tqdm
-* visdom
-* pystoi
-* soundfile
+* Python 3.6.x
+* CUDA 10
+
+You can use pip to install Python depedencies.
+
+```
+pip install -r requirements.txt
+```
 
 ## Usage
 

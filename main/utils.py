@@ -6,7 +6,6 @@ import os
 from visdom import Visdom
 import time
 import numpy as np
-from visdom_save import vis
 
 num_workers = 8
 pin_memory = False
@@ -211,13 +210,6 @@ def train(device, model, train_dataset, val_dataset, fromepoch, epochs, train_ba
                 'optimizer_state_dict': optimizer.state_dict(),
                 'train_loss': running_loss,
                 'val_loss': val_loss}, result_model_path + 'model[%s].tar' % model_detail)
-
-    # save visdom loss curves
-    print()
-    print('Visdom saving.')
-    result_visdom_path = result_model_path + 'visdom_loss[%s].log' % model_detail
-    vis.create_log_at(result_visdom_path, model_detail)
-    print()
 
     print(time.asctime(time.localtime(time.time())) + ' Training complete.')
     end_time = time.time()

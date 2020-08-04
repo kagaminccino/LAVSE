@@ -1,0 +1,7 @@
+torchaudio==0.4.0
+# torch==1.4.0 # compatible version of torch will be automatically installed when installing torchaudio
+torchsummaryX==1.3.0
+tqdm==4.41.0
+visdom==0.1.8.9
+pystoi==0.2.2
+soundfile==0.10.3.post1

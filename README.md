@@ -20,7 +20,8 @@ Please cite the following paper if you find the codes useful in your research.
 
 ## Prerequisites
 
-* Python 3.6.x
+* Ubuntu 18.04
+* Python 3.6
 * CUDA 10
 
 You can use pip to install Python depedencies.
